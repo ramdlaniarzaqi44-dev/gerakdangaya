@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPA Kelas 7: Gerak dan Gaya (Kurikulum Merdeka)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .math-formula {
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #4F46E5 0%, #2563EB 100%);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .quiz-option:checked + label {
+            background-color: #DBEAFE;
+            border-color: #3B82F6;
+            color: #1E40AF;
+        }
+
+        /* Hide scrollbar for cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555; 
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-atom text-blue-600 text-2xl mr-2"></i>
+                    <span class="font-bold text-xl tracking-wide text-gray-800">EduSains <span class="text-blue-600">Kelas 7</span></span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#pengertian" class="text-gray-600 hover:text-blue-600 font-medium transition">Pengertian</a>
+                    <a href="#jenis" class="text-gray-600 hover:text-blue-600 font-medium transition">Jenis Gaya</a>
+                    <a href="#resultan" class="text-gray-600 hover:text-blue-600 font-medium transition">Resultan</a>
+                    <a href="#newton" class="text-gray-600 hover:text-blue-600 font-medium transition">Hukum Newton</a>
+                    <a href="#kuis" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">Latihan Soal</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-24 pb-12 gradient-bg text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Bab 4: Gerak dan Gaya</h1>
+            <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto">Panduan lengkap materi IPA Kelas 7 Kurikulum Merdeka. Memahami interaksi benda, hukum alam, dan perhitungannya.</p>
+            <a href="#pengertian" class="inline-block bg-white text-blue-600 font-bold px-8 py-3 rounded-full hover:bg-gray-100 transition shadow-lg">
+                Mulai Belajar <i class="fas fa-arrow-down ml-2"></i>
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+
+        <!-- 1. Pengertian Gaya -->
+        <section id="pengertian" class="scroll-mt-24">
+            <div class="flex items-center mb-6">
+                <div class="bg-blue-100 p-3 rounded-full text-blue-600 mr-4">
+                    <i class="fas fa-hand-rock text-2xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-gray-900">1. Konsep Dasar Gaya</h2>
+            </div>
+            
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                <p class="text-lg mb-4 text-justify">
+                    Dalam fisika, <strong>Gaya</strong> adalah tarikan atau dorongan yang dapat menyebabkan perubahan pada benda. Gaya tidak selalu menyebabkan benda bergerak, tetapi gaya dapat mengubah:
+                </p>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        <span><strong>Bentuk Benda:</strong> Contohnya meremas kaleng atau membentuk tanah liat.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        <span><strong>Arah Gerak Benda:</strong> Contohnya menendang bola yang menggelinding ke arah lain.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        <span><strong>Kecepatan Benda:</strong> Contohnya menginjak gas mobil (dipercepat) atau mengerem (diperlambat).</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        <span><strong>Posisi Benda:</strong> Benda diam menjadi bergerak.</span>
+                    </li>
+                </ul>
+
+                <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
+                    <h3 class="font-bold text-blue-800 mb-2">Satuan dan Alat Ukur</h3>
+                    <p>Satuan Internasional (SI) untuk gaya adalah <strong>Newton</strong> (dilambangkan dengan <strong>N</strong>).</p>
+                    <p>Alat untuk mengukur besar gaya disebut <strong>Neraca Pegas</strong> atau <strong>Dinamometer</strong>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Jenis Gaya -->
+        <section id="jenis" class="scroll-mt-24">
+            <div class="flex items-center mb-6">
+                <div class="bg-purple-100 p-3 rounded-full text-purple-600 mr-4">
+                    <i class="fas fa-layer-group text-2xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-gray-900">2. Jenis-Jenis Gaya</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Gaya Sentuh -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 card-hover">
+                    <h3 class="text-xl font-bold text-purple-700 mb-3 border-b pb-2">A. Gaya Sentuh</h3>
+                    <p class="text-sm text-gray-500 mb-4">Gaya yang bekerja melalui kontak langsung dengan benda.</p>
+                    <ul class="space-y-3">
+                        <li>
+                            <span class="font-semibold text-gray-800">2. Gaya Gravitasi:</span> Gaya tarik bumi terhadap benda bermassa. Menyebabkan benda jatuh ke bawah dan memiliki berat (<i>w</i>).
+                        </li>
+                        <li>
+                            <span class="font-semibold text-gray-800">3. Gaya Listrik:</span> Gaya tarik-menarik atau tolak-menolak muatan listrik. Contoh: Potongan kertas tertarik penggaris plastik yang digosok.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Resultan Gaya -->
+        <section id="resultan" class="scroll-mt-24">
+            <div class="flex items-center mb-6">
+                <div class="bg-green-100 p-3 rounded-full text-green-600 mr-4">
+                    <i class="fas fa-calculator text-2xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-gray-900">3. Resultan Gaya (&Sigma;<i>F</i>)</h2>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                <p class="mb-6">Resultan gaya adalah total atau jumlah seluruh gaya yang bekerja pada suatu benda.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                    <!-- Searah -->
+                    <div class="p-4 bg-green-50 rounded-lg">
+                        <h4 class="font-bold text-green-800 mb-2">Gaya Searah</h4>
+                        <div class="mb-2 text-2xl">
+                            <i class="fas fa-arrow-right text-blue-500"></i> <i class="fas fa-arrow-right text-blue-500"></i>
+                        </div>
+                        <p class="text-sm mb-2">Gaya dijumlahkan.</p>
+                        <code class="bg-white px-2 py-1 rounded border border-green-200 block">R = F1 + F2</code>
+                    </div>
+
+                    <!-- Berlawanan -->
+                    <div class="p-4 bg-red-50 rounded-lg">
+                        <h4 class="font-bold text-red-800 mb-2">Gaya Berlawanan</h4>
+                        <div class="mb-2 text-2xl">
+                            <i class="fas fa-arrow-left text-red-500"></i> <i class="fas fa-arrow-right text-blue-500"></i>
+                        </div>
+                        <p class="text-sm mb-2">Gaya dikurangkan.</p>
+                        <code class="bg-white px-2 py-1 rounded border border-red-200 block">R = F1 - F2</code>
+                    </div>
+
+                    <!-- Seimbang -->
+                    <div class="p-4 bg-gray-50 rounded-lg">
+                        <h4 class="font-bold text-gray-800 mb-2">Gaya Seimbang</h4>
+                        <div class="mb-2 text-2xl">
+                            <i class="fas fa-arrows-alt-h text-gray-500"></i>
+                        </div>
+                        <p class="text-sm mb-2">Besar gaya sama, arah beda.</p>
+                        <code class="bg-white px-2 py-1 rounded border border-gray-200 block">R = 0</code>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Hukum Newton -->
+        <section id="newton" class="scroll-mt-24">
+            <div class="flex items-center mb-6">
+                <div class="bg-orange-100 p-3 rounded-full text-orange-600 mr-4">
+                    <i class="fas fa-apple-alt text-2xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-gray-900">4. Hukum Newton</h2>
+            </div>
+
+            <div class="space-y-8">
+                <!-- Hukum I -->
+                <div class="bg-white border-l-8 border-blue-500 p-6 rounded-r-xl shadow-sm">
+                    <h3 class="text-2xl font-bold text-blue-800 mb-2">Hukum I Newton (Kelembaman/Inersia)</h3>
+                    <p class="italic text-gray-600 mb-4">"Jika resultan gaya pada suatu benda sama dengan nol, maka benda yang diam akan tetap diam dan benda yang bergerak akan terus bergerak dengan kecepatan tetap."</p>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <p><strong>&Sigma;<i>F</i> = 0</strong></p>
+                        <p class="mt-2 text-sm"><strong>Contoh:</strong> Penumpang bus terdorong ke depan saat supir mengerem mendadak. Ini karena tubuh mempertahankan keadaan geraknya (inersia).</p>
+                    </div>
+                </div>
+
+                <!-- Hukum II -->
+                <div class="bg-white border-l-8 border-green-500 p-6 rounded-r-xl shadow-sm">
+                    <h3 class="text-2xl font-bold text-green-800 mb-2">Hukum II Newton (<i>F</i> = <i>m</i> &times; <i>a</i>)</h3>
+                    <p class="italic text-gray-600 mb-4">"Percepatan sebuah benda berbanding lurus dengan gaya total yang bekerja padanya dan berbanding terbalik dengan massanya."</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                        <div class="bg-green-50 p-4 rounded text-center">
+                            <p class="font-bold">Mencari Gaya (<i>F</i>)</p>
+                            <p class="math-formula text-xl text-green-700">F = m &times; a</p>
+                            <p class="text-xs text-gray-500 mt-1">Satuan: Newton (N)</p>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded text-center">
+                            <p class="font-bold">Mencari Massa (<i>m</i>)</p>
+                            <p class="math-formula text-xl text-green-700">m = F / a</p>
+                            <p class="text-xs text-gray-500 mt-1">Satuan: Kilogram (kg)</p>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded text-center">
+                            <p class="font-bold">Mencari Percepatan (<i>a</i>)</p>
+                            <p class="math-formula text-xl text-green-700">a = F / m</p>
+                            <p class="text-xs text-gray-500 mt-1">Satuan: m/s²</p>
+                        </div>
+                    </div>
+                    <p class="text-sm"><strong>Catatan:</strong> Semakin besar massa benda, semakin besar gaya yang dibutuhkan untuk menggerakkannya.</p>
+                </div>
+
+                <!-- Hukum III -->
+                <div class="bg-white border-l-8 border-red-500 p-6 rounded-r-xl shadow-sm">
+                    <h3 class="text-2xl font-bold text-red-800 mb-2">Hukum III Newton (Aksi-Reaksi)</h3>
+                    <p class="italic text-gray-600 mb-4">"Setiap ada gaya aksi, maka akan ada gaya reaksi yang besarnya sama tetapi berlawanan arah."</p>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <p><strong><i>F</i><sub>aksi</sub> = - <i>F</i><sub>reaksi</sub></strong></p>
+                        <p class="mt-2 text-sm"><strong>Contoh:</strong> Saat mendayung perahu, dayung mendorong air ke belakang (Aksi), air mendorong perahu ke depan (Reaksi). Saat burung terbang, sayap menekan udara ke bawah, udara mendorong burung ke atas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-200">
+
+        <!-- 5. Kuis Latihan -->
+        <section id="kuis" class="scroll-mt-24">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-gray-900 mb-2">Uji Pemahaman</h2>
+                <p class="text-gray-600">Terdiri dari 10 soal teori dan 10 soal hitungan.</p>
+            </div>
+
+            <div id="quiz-container" class="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+                <!-- Javascript will inject questions here -->
+                <div id="questions-wrapper" class="space-y-8"></div>
+                
+                <div class="mt-8 text-center">
+                    <button onclick="calculateScore()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition transform hover:scale-105">
+                        Selesai & Cek Nilai
+                    </button>
+                </div>
+
+                <div id="result-area" class="hidden mt-8 text-center bg-gray-50 p-6 rounded-xl border border-gray-200">
+                    <h3 class="text-2xl font-bold text-gray-800">Nilai Kamu:</h3>
+                    <p id="score-display" class="text-5xl font-bold text-blue-600 my-4">0</p>
+                    <p id="score-message" class="text-lg font-medium"></p>
+                    <button onclick="window.location.reload()" class="mt-4 text-sm text-gray-500 underline hover:text-gray-800">Ulangi Kuis</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="font-medium">Materi IPA Kelas 7 Kurikulum Merdeka</p>
+            <p class="text-sm text-gray-400 mt-2">Dibuat sebagai media pembelajaran interaktif.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Data Soal: 10 Teori, 10 Hitungan
+        const questions = [
+            // --- TEORI (1-10) ---
+            {
+                q: "1. Tarikan atau dorongan yang dapat mengubah bentuk, arah, atau kecepatan benda disebut...",
+                options: ["Usaha", "Energi", "Gaya", "Daya"],
+                answer: 2
+            },
+            {
+                q: "2. Alat yang digunakan untuk mengukur besar gaya adalah...",
+                options: ["Termometer", "Dinamometer", "Barometer", "Speedometer"],
+                answer: 1
+            },
+            {
+                q: "3. Satuan Internasional (SI) untuk gaya adalah...",
+                options: ["Kilogram", "Joule", "Newton", "Watt"],
+                answer: 2
+            },
+            {
+                q: "4. Manakah di bawah ini yang termasuk gaya tak sentuh?",
+                options: ["Gaya gesek", "Gaya otot", "Gaya pegas", "Gaya gravitasi"],
+                answer: 3
+            },
+            {
+                q: "5. Gaya gesek selalu bekerja ke arah...",
+                options: ["Searah dengan gerak benda", "Berlawanan dengan gerak benda", "Tegak lurus ke atas", "Tegak lurus ke bawah"],
+                answer: 1
+            },
+            {
+                q: "6. Hukum I Newton sering disebut juga sebagai hukum...",
+                options: ["Aksi-Reaksi", "Percepatan", "Kelembaman (Inersia)", "Gravitasi"],
+                answer: 2
+            },
+            {
+                q: "7. Saat kita menendang tembok, kaki kita terasa sakit. Hal ini sesuai dengan...",
+                options: ["Hukum I Newton", "Hukum II Newton", "Hukum III Newton", "Hukum Archimedes"],
+                answer: 2
+            },
+            {
+                q: "8. Peristiwa berikut yang merupakan contoh Hukum I Newton adalah...",
+                options: ["Penumpang terdorong ke depan saat mobil direm mendadak", "Roket meluncur ke atas", "Buah kelapa jatuh dari pohon", "Mendorong gerobak yang berat"],
+                answer: 0
+            },
+            {
+                q: "9. Berikut ini cara memperkecil gaya gesek, KECUALI...",
+                options: ["Memberi pelumas/oli", "Menggunakan roda", "Membuat permukaan kasar", "Membuat bentuk aerodinamis"],
+                answer: 2
+            },
+            {
+                q: "10. Apa yang terjadi jika resultan gaya yang bekerja pada benda adalah nol?",
+                options: ["Benda pasti diam", "Benda bergerak semakin cepat", "Benda bergerak semakin lambat", "Benda diam atau bergerak lurus beraturan"],
+                answer: 3
+            },
+            // --- HITUNGAN (11-20) ---
+            {
+                q: "11. Dua orang mendorong mobil mogok. Andi mendorong dengan gaya 50 N dan Budi dengan gaya 70 N. Jika mereka mendorong searah, berapa resultan gayanya?",
+                options: ["20 N", "100 N", "120 N", "3500 N"],
+                answer: 2 // 50+70
+            },
+            {
+                q: "12. Dalam tarik tambang, Tim A menarik ke kiri dengan gaya 400 N, dan Tim B menarik ke kanan dengan gaya 350 N. Berapa resultan gaya dan ke mana arahnya?",
+                options: ["50 N ke kiri", "50 N ke kanan", "750 N ke kiri", "750 N ke kanan"],
+                answer: 0 // 400-350 ke kiri
+            },
+            {
+                q: "13. Sebuah benda bermassa 5 kg didorong dengan gaya 20 N. Berapakah percepatan yang dialami benda tersebut?",
+                options: ["0,25 m/s²", "4 m/s²", "25 m/s²", "100 m/s²"],
+                answer: 1 // a = F/m = 20/5 = 4
+            },
+            {
+                q: "14. Sebuah mobil mainan bergerak dengan percepatan 2 m/s². Jika massa mobil tersebut 3 kg, berapakah gaya yang bekerja padanya?",
+                options: ["1,5 N", "5 N", "6 N", "0,6 N"],
+                answer: 2 // F = m*a = 3*2 = 6
+            },
+            {
+                q: "15. Gaya sebesar 100 N bekerja pada sebuah benda sehingga benda tersebut mengalami percepatan 5 m/s². Berapakah massa benda tersebut?",
+                options: ["20 kg", "500 kg", "95 kg", "105 kg"],
+                answer: 0 // m = F/a = 100/5 = 20
+            },
+            {
+                q: "16. Sebuah benda memiliki berat (w) 600 N. Jika percepatan gravitasi bumi 10 m/s², berapakah massa benda tersebut?",
+                options: ["6000 kg", "60 kg", "6 kg", "0,6 kg"],
+                answer: 1 // w = m*g -> m = w/g = 600/10
+            },
+            {
+                q: "17. Benda A (massa 2 kg) dan Benda B (massa 4 kg) didorong dengan gaya yang sama besar. Pernyataan yang benar adalah...",
+                options: ["Percepatan A lebih besar dari B", "Percepatan B lebih besar dari A", "Percepatan keduanya sama", "Keduanya tidak bergerak"],
+                answer: 0 // Massa kecil, percepatan besar (jika F sama)
+            },
+            {
+                q: "18. Tiga gaya bekerja pada balok: F1 = 10 N ke kanan, F2 = 5 N ke kanan, F3 = 8 N ke kiri. Resultan gayanya adalah...",
+                options: ["23 N ke kanan", "7 N ke kanan", "7 N ke kiri", "3 N ke kiri"],
+                answer: 1 // (10+5) - 8 = 7 ke kanan
+            },
+            {
+                q: "19. Sebuah truk bermassa 2000 kg mengerem dengan gaya hambat 4000 N. Berapa perlambatan (percepatan negatif) truk tersebut?",
+                options: ["0,5 m/s²", "2 m/s²", "8 m/s²", "20 m/s²"],
+                answer: 1 // a = F/m = 4000/2000 = 2
+            },
+            {
+                q: "20. Gaya aksi dan reaksi tidak saling meniadakan (resultan tidak nol) karena...",
+                options: ["Besarnya tidak sama", "Arahnya sama", "Bekerja pada dua benda yang berbeda", "Bekerja pada satu benda yang sama"],
+                answer: 2
+            }
+        ];
+
+        function renderQuiz() {
+            const wrapper = document.getElementById('questions-wrapper');
+            questions.forEach((item, index) => {
+                const qDiv = document.createElement('div');
+                qDiv.className = "mb-6 border-b border-gray-100 pb-6 last:border-0";
+                
+                // Judul Bagian (Teori vs Hitungan)
+                if(index === 0) {
+                    qDiv.innerHTML += `<h4 class="font-bold text-blue-600 mb-4 bg-blue-50 inline-block px-3 py-1 rounded">Bagian A: Konsep & Teori</h4>`;
+                } else if(index === 10) {
+                    qDiv.innerHTML += `<h4 class="font-bold text-green-600 mb-4 bg-green-50 inline-block px-3 py-1 rounded mt-4">Bagian B: Hitungan & Penerapan</h4>`;
+                }
+
+                const questionText = `<p class="font-medium text-lg mb-3 text-gray-800">${item.q}</p>`;
+                let optionsHtml = '<div class="grid grid-cols-1 md:grid-cols-2 gap-3">';
+                
+                item.options.forEach((opt, i) => {
+                    optionsHtml += `
+                        <div>
+                            <input type="radio" name="q${index}" id="q${index}_opt${i}" value="${i}" class="quiz-option hidden">
+                            <label for="q${index}_opt${i}" class="block border border-gray-300 rounded-lg p-3 cursor-pointer hover:bg-gray-50 transition select-none">
+                                <span class="font-bold text-gray-400 mr-2">${String.fromCharCode(65+i)}.</span> ${opt}
+                            </label>
+                        </div>
+                    `;
+                });
+                optionsHtml += '</div>';
+
+                qDiv.innerHTML += questionText + optionsHtml;
+                wrapper.appendChild(qDiv);
+            });
+        }
+
+        function calculateScore() {
+            let score = 0;
+            let answered = 0;
+            
+            questions.forEach((item, index) => {
+                const selected = document.querySelector(`input[name="q${index}"]:checked`);
+                if(selected) {
+                    answered++;
+                    const val = parseInt(selected.value);
+                    const label = document.querySelector(`label[for="q${index}_opt${val}"]`);
+                    
+                    if(val === item.answer) {
+                        score += 5; // 20 soal x 5 = 100
+                        label.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
+                        label.innerHTML += ' <i class="fas fa-check text-green-600 float-right mt-1"></i>';
+                    } else {
+                        label.classList.add('bg-red-100', 'border-red-500', 'text-red-800');
+                        label.innerHTML += ' <i class="fas fa-times text-red-600 float-right mt-1"></i>';
+                        
+                        // Show correct answer
+                        const correctLabel = document.querySelector(`label[for="q${index}_opt${item.answer}"]`);
+                        correctLabel.classList.add('bg-green-50', 'border-green-300');
+                        correctLabel.innerHTML += ' <span class="text-xs font-bold text-green-600 float-right mt-1">(Jawaban Benar)</span>';
+                    }
+                }
+            });
+
+            const resultArea = document.getElementById('result-area');
+            const scoreDisplay = document.getElementById('score-display');
+            const scoreMessage = document.getElementById('score-message');
+
+            resultArea.classList.remove('hidden');
+            scoreDisplay.innerText = score;
+            
+            if(score === 100) {
+                scoreMessage.innerText = "Sempurna! Kamu ahli Fisika!";
+                scoreMessage.className = "text-lg font-bold text-green-600";
+            } else if (score >= 80) {
+                scoreMessage.innerText = "Hebat! Pemahamanmu sangat bagus.";
+                scoreMessage.className = "text-lg font-bold text-blue-600";
+            } else if (score >= 60) {
+                scoreMessage.innerText = "Cukup bagus, tingkatkan lagi latihannya.";
+                scoreMessage.className = "text-lg font-bold text-orange-600";
+            } else {
+                scoreMessage.innerText = "Jangan menyerah, baca lagi materinya ya!";
+                scoreMessage.className = "text-lg font-bold text-red-600";
+            }
+
+            // Disable all inputs after submission
+            const allInputs = document.querySelectorAll('input[type="radio"]');
+            allInputs.forEach(input => input.disabled = true);
+            
+            // Scroll to result
+            resultArea.scrollIntoView({behavior: "smooth"});
+        }
+
+        // Initialize Quiz
+        window.onload = renderQuiz;
+    </script>
+</body>
+</html>
